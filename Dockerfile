@@ -8,4 +8,4 @@ RUN apt-get update \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-RUN npm install -g bower && npm install -g gulp
+RUN npm install -g bower && npm install -g gulp && npm cache clean
